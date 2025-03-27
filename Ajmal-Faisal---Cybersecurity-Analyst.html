@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajmal Faisal - Cybersecurity Analyst</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#0f172a',
+secondary: '#38bdf8'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.matrix-bg {
+background: linear-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.95)),
+url("https://static.readdy.ai/image/65bbe2e47eee93521af400952c4080db/4951a89c9d42c924477084f9934eb350.png");
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+.typewriter {
+overflow: hidden;
+border-right: .15em solid #00ffff;
+white-space: nowrap;
+animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: #00ffff }
+}
+.hacker-text {
+position: relative;
+display: inline-block;
+}
+.hacker-text::before {
+content: attr(data-text);
+position: absolute;
+left: 0;
+width: 100%;
+opacity: 0.8;
+transform: scale(1.1);
+filter: blur(1px);
+animation: glitch 3s infinite linear alternate-reverse;
+}
+.hacker-text::after {
+content: attr(data-text);
+position: absolute;
+left: 0;
+width: 100%;
+opacity: 0.8;
+transform: scale(0.9);
+filter: blur(1px);
+animation: glitch 2s infinite linear alternate-reverse;
+}
+@keyframes glitch {
+0% {
+clip-path: inset(40% 0 61% 0);
+transform: translate(-2px, 2px);
+text-shadow: -2px 0 #00ffff;
+}
+20% {
+clip-path: inset(92% 0 1% 0);
+transform: translate(1px, -3px);
+text-shadow: 2px 0 #00ffff;
+}
+40% {
+clip-path: inset(43% 0 1% 0);
+transform: translate(-1px, 3px);
+text-shadow: -1px 0 #00ffff;
+}
+60% {
+clip-path: inset(25% 0 58% 0);
+transform: translate(2px, -1px);
+text-shadow: 1px 0 #00ffff;
+}
+80% {
+clip-path: inset(54% 0 7% 0);
+transform: translate(-2px, 2px);
+text-shadow: -2px 0 #00ffff;
+}
+100% {
+clip-path: inset(58% 0 43% 0);
+transform: translate(2px, -2px);
+text-shadow: 2px 0 #00ffff;
+}
+}
+</style>
+</head>
+<body class="bg-primary text-gray-100 min-h-screen">
+<nav class="fixed w-full bg-gray-900/90 backdrop-blur-sm z-50 border-b border-gray-700">
+<div class="absolute right-6 top-1/2 -translate-y-1/2">
+<button id="theme-toggle" class="w-10 h-10 flex items-center justify-center bg-secondary/10 dark:bg-secondary/20 rounded-full hover:bg-secondary/20 dark:hover:bg-secondary/30 transition-all group">
+<i class="ri-sun-line dark:hidden text-xl"></i>
+<i class="ri-moon-line hidden dark:inline text-xl"></i>
+<span class="cat-emoji absolute opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:-translate-y-8">🐱</span>
+</button>
+</div>
+<div class="container mx-auto px-6 py-4">
+<div class="flex justify-between items-center">
+<div class="text-2xl font-['Pacifico'] text-secondary hacker-text" data-text="AF">AF</div>
+<div class="flex space-x-8">
+<a href="#about" class="hover:text-secondary transition-colors">About</a>
+<a href="#certifications" class="hover:text-secondary transition-colors">Certifications</a>
+<a href="#challenge-platforms" class="hover:text-secondary transition-colors">Challenges</a>
+<a href="#projects" class="hover:text-secondary transition-colors">Projects</a>
+<a href="#contact" class="hover:text-secondary transition-colors">Contact</a>
+</div>
+</div>
+</div>
+</nav>
+<header class="matrix-bg pt-32 pb-20">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="w-64 h-64 rounded-full overflow-hidden border-4 border-secondary/30 shadow-xl shadow-secondary/20">
+<img src="https://static.readdy.ai/image/65bbe2e47eee93521af400952c4080db/d25fa8ac57b7f20eb05a104f2427f7b2.png"
+alt="Ajmal Faisal"
+class="w-full h-full object-cover">
+</div>
+<div class="text-center md:text-left">
+<h1 class="text-5xl font-bold mb-4">Ajmal Faisal</h1>
+<div class="typewriter inline-block text-xl text-secondary mb-6">
+Cybersecurity Analyst
+</div>
+<p class="text-gray-300 max-w-2xl">
+Securing Digital Frontiers | Network Security | Cyber Operations
+</p>
+<div class="flex gap-4 mt-8 justify-center md:justify-start">
+<a href="https://linkedin.com/in/ajmal-faisal-93318827a" target="_blank"
+class="w-10 h-10 flex items-center justify-center bg-secondary/10 rounded-full hover:bg-secondary/20 transition-colors">
+<i class="ri-linkedin-fill text-xl"></i>
+</a>
+<a href="https://github.com/axjmall" target="_blank"
+class="w-10 h-10 flex items-center justify-center bg-secondary/10 rounded-full hover:bg-secondary/20 transition-colors">
+<i class="ri-github-fill text-xl"></i>
+</a>
+<a href="https://tryhackme.com/p/ZAP" target="_blank"
+class="w-10 h-10 flex items-center justify-center bg-secondary/10 rounded-full hover:bg-secondary/20 transition-colors">
+<i class="ri-sword-fill text-xl"></i>
+</a>
+<button onclick="startGame()" class="w-10 h-10 flex items-center justify-center bg-secondary/10 rounded-full hover:bg-secondary/20 transition-colors">
+<i class="ri-gamepad-fill text-xl"></i>
+</button>
+<div id="gameModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden items-center justify-center z-50">
+<div class="bg-primary/90 p-8 rounded-lg border border-secondary/20 w-[320px]">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-xl font-bold">Memory Game</h3>
+<button onclick="closeGame()" class="text-gray-400 hover:text-white">
+<i class="ri-close-line text-xl"></i>
+</button>
+</div>
+<div id="gameBoard" class="grid grid-cols-4 gap-2 mb-4">
+</div>
+<div class="text-center text-sm text-gray-400">
+Moves: <span id="moves">0</span>
+</div>
+</div>
+</div>
+<script>
+let firstCard = null;
+let secondCard = null;
+let moves = 0;
+let canFlip = true;
+const emojis = ['🎮', '🎲', '🎯', '🎪', '🎨', '🎭', '🎪', '🎨', '🎮', '🎲', '🎯', '🎭'];
+function shuffle(array) {
+for (let i = array.length - 1; i > 0; i--) {
+const j = Math.floor(Math.random() * (i + 1));
+[array[i], array[j]] = [array[j], array[i]];
+}
+return array;
+}
+function startGame() {
+document.getElementById('gameModal').classList.remove('hidden');
+document.getElementById('gameModal').classList.add('flex');
+moves = 0;
+document.getElementById('moves').textContent = moves;
+const shuffledEmojis = shuffle([...emojis]);
+const gameBoard = document.getElementById('gameBoard');
+gameBoard.innerHTML = '';
+shuffledEmojis.forEach((emoji, index) => {
+const card = document.createElement('div');
+card.className = 'h-14 w-14 bg-secondary/10 rounded cursor-pointer flex items-center justify-center text-2xl transform transition-transform duration-300';
+card.dataset.value = emoji;
+card.onclick = () => flipCard(card);
+card.innerHTML = '?';
+gameBoard.appendChild(card);
+});
+}
+function flipCard(card) {
+if (!canFlip || card.innerHTML !== '?' || card === firstCard) return;
+card.innerHTML = card.dataset.value;
+if (!firstCard) {
+firstCard = card;
+} else {
+secondCard = card;
+moves++;
+document.getElementById('moves').textContent = moves;
+canFlip = false;
+setTimeout(checkMatch, 1000);
+}
+}
+function checkMatch() {
+if (firstCard.dataset.value === secondCard.dataset.value) {
+firstCard.style.visibility = 'hidden';
+secondCard.style.visibility = 'hidden';
+} else {
+firstCard.innerHTML = '?';
+secondCard.innerHTML = '?';
+}
+firstCard = null;
+secondCard = null;
+canFlip = true;
+if (document.querySelectorAll('#gameBoard div[style*="hidden"]').length === emojis.length) {
+setTimeout(() => {
+alert(`Congratulations! You won in ${moves} moves!`);
+closeGame();
+}, 500);
+}
+}
+function closeGame() {
+document.getElementById('gameModal').classList.add('hidden');
+document.getElementById('gameModal').classList.remove('flex');
+}
+</script>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section id="about" class="py-20 bg-gray-900">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold mb-12 text-center">About Me</h2>
+<div class="bg-gray-800 rounded-lg p-8 shadow-lg">
+<p class="text-gray-300 leading-relaxed">
+I'm a passionate and driven Cybersecurity student with a strong interest in network security, cyber operations, and enterprise networking. I hold a Bachelor of Science (BSc) in Cybersecurity, and I am currently enhancing my skill set through various industry-recognized certifications to further my career in the field. I have a deep interest in understanding the intricacies of network infrastructure, security protocols, and the tools that protect organizations from cyber threats. With hands-on experience and a rigorous academic background, I am building a solid foundation in cybersecurity and network management.
+</p>
+</div>
+</div>
+</section>
+<section id="certifications" class="py-20 bg-gray-800">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold mb-12 text-center">Certifications</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-all">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-shield-keyhole-line text-2xl text-secondary"></i>
+</div>
+<div>
+<h3 class="font-bold">Certified Ethical Hacker (CEH)</h3>
+<span class="text-sm text-secondary">Cisco</span>
+</div>
+</div>
+<p class="text-gray-300 text-sm">
+Developing expertise in identifying and addressing vulnerabilities through ethical hacking techniques.
+</p>
+<div class="mt-4 bg-secondary/10 rounded-full h-2">
+<div class="bg-secondary h-full rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<div class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-all">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-lock-password-line text-2xl text-secondary"></i>
+</div>
+<div>
+<h3 class="font-bold">GL04-Network Security</h3>
+<span class="text-sm text-secondary">Ongoing</span>
+</div>
+</div>
+<p class="text-gray-300 text-sm">
+Gaining hands-on knowledge in securing networks and mitigating cyber threats.
+</p>
+<div class="mt-4 bg-secondary/10 rounded-full h-2">
+<div class="bg-secondary h-full rounded-full" style="width: 60%"></div>
+</div>
+</div>
+<div class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-all">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-server-line text-2xl text-secondary"></i>
+</div>
+<div>
+<h3 class="font-bold">GL05-CyberOps Associate</h3>
+<span class="text-sm text-secondary">Ongoing</span>
+</div>
+</div>
+<p class="text-gray-300 text-sm">
+Diving deeper into cybersecurity operations, focusing on incident response and monitoring.
+</p>
+<div class="mt-4 bg-secondary/10 rounded-full h-2">
+<div class="bg-secondary h-full rounded-full" style="width: 45%"></div>
+</div>
+</div>
+<div class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-all">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-shield-check-line text-2xl text-secondary"></i>
+</div>
+<div>
+<h3 class="font-bold">Certified in Cybersecurity (CC)</h3>
+<span class="text-sm text-secondary">(ISC)² - Ongoing</span>
+</div>
+</div>
+<p class="text-gray-300 text-sm">
+Enhancing overall understanding of cybersecurity principles and risk management.
+</p>
+<div class="mt-4 bg-secondary/10 rounded-full h-2">
+<div class="bg-secondary h-full rounded-full" style="width: 80%"></div>
+</div>
+</div>
+<div class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-all">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-router-line text-2xl text-secondary"></i>
+</div>
+<div>
+<h3 class="font-bold">GL02-CCNA: Switching, Routing, and Wireless</h3>
+<span class="text-sm text-secondary">Ongoing</span>
+</div>
+</div>
+<p class="text-gray-300 text-sm">
+Mastering core principles of routing and switching for seamless network operations.
+</p>
+<div class="mt-4 bg-secondary/10 rounded-full h-2">
+<div class="bg-secondary h-full rounded-full" style="width: 65%"></div>
+</div>
+</div>
+<div class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-all">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-database-2-line text-2xl text-secondary"></i>
+</div>
+<div>
+<h3 class="font-bold">GL01-CCNA: Introduction to Networks</h3>
+<span class="text-sm text-secondary">Ongoing</span>
+</div>
+</div>
+<p class="text-gray-300 text-sm">
+Foundation course covering network fundamentals and basic configurations.
+</p>
+<div class="mt-4 bg-secondary/10 rounded-full h-2">
+<div class="bg-secondary h-full rounded-full" style="width: 90%"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="challenge-platforms" class="py-20 bg-gray-900">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold mb-12 text-center">Challenge Platforms</h2>
+<div class="mb-12">
+<h3 class="text-xl font-bold mb-6 text-secondary">Coding Challenges & Practice</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+<a href="https://leetcode.com" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-code-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">LeetCode</span>
+</div>
+</a>
+<a href="https://www.hackerrank.com" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-terminal-box-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">HackerRank</span>
+</div>
+</a>
+<a href="https://www.codewars.com" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-sword-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">Codewars</span>
+</div>
+</a>
+<a href="https://exercism.io" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-code-box-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">Exercism</span>
+</div>
+</a>
+<a href="https://www.topcoder.com" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-trophy-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">TopCoder</span>
+</div>
+</a>
+</div>
+</div>
+<div class="mb-12">
+<h3 class="text-xl font-bold mb-6 text-secondary">Cybersecurity & Hacking Challenges</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+<a href="https://www.hackthissite.org" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-shield-keyhole-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">HackThisSite</span>
+</div>
+</a>
+<a href="https://picoctf.org" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-flag-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">PicoCTF</span>
+</div>
+</a>
+<a href="https://www.root-me.org" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-terminal-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">Root Me</span>
+</div>
+</a>
+<a href="https://overthewire.org" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-gamepad-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">OverTheWire</span>
+</div>
+</a>
+<a href="https://tryhackme.com" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-bug-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">TryHackMe</span>
+</div>
+</a>
+</div>
+</div>
+<div class="mb-12">
+<h3 class="text-xl font-bold mb-6 text-secondary">Skill-based Challenges</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+<a href="https://mystery.knightlab.com" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-database-2-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">SQL Murder</span>
+</div>
+</a>
+<a href="https://flukeout.github.io" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-layout-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">CSS Diner</span>
+</div>
+</a>
+<a href="https://flexboxfroggy.com" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-layout-masonry-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">Flexbox Froggy</span>
+</div>
+</a>
+<a href="https://cssgridgarden.com" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-grid-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">Grid Garden</span>
+</div>
+</a>
+<a href="https://cssbattle.dev" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-brush-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">CSSBattle</span>
+</div>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-6 text-secondary">Game-based Learning</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+<a href="https://www.codingame.com" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-gamepad-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">CodinGame</span>
+</div>
+</a>
+<a href="https://play.elevatorsaga.com" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-building-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">Elevator Saga</span>
+</div>
+</a>
+<a href="https://robocode.sourceforge.io" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-robot-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">Robocode</span>
+</div>
+</a>
+<a href="https://codecombat.com" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-sword-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">CodeCombat</span>
+</div>
+</a>
+<a href="https://www.checkio.org" target="_blank" class="bg-primary/30 p-4 rounded-lg border border-secondary/20 hover:border-secondary/40 hover:bg-primary/50 transition-all group">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-game-line text-secondary"></i>
+</div>
+<span class="font-medium group-hover:text-secondary transition-colors">CheckiO</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section id="projects" class="py-20 bg-gray-800">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+<div class="bg-gray-900 p-6 rounded-lg">
+<h3 class="text-xl font-bold mb-6">TryHackMe Progress</h3>
+<div id="tryhackmeChart" class="w-full h-[300px]"></div>
+</div>
+<div class="bg-gray-900 p-6 rounded-lg">
+<h3 class="text-xl font-bold mb-6">GitHub Contributions</h3>
+<div id="githubChart" class="w-full h-[300px]"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="h-48 overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/5d4c55795b4221bee49575dfb9711e38.jpg"
+alt="ZapShare"
+class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+</div>
+<div class="p-6 transform group-hover:-translate-y-2 transition-transform duration-300">
+<h3 class="text-xl font-bold mb-2">ZapShare</h3>
+<p class="text-gray-600 mb-4">A secure file transfer application with end-to-end encryption, real-time progress tracking, and multi-platform support.</p>
+<a href="#" class="inline-flex items-center text-secondary hover:text-secondary/80 group">
+View Project <i class="ri-arrow-right-line ml-2 group-hover:translate-x-2 transition-transform"></i>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="h-48 overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/f3147faeae1afffb7cd9a99be3e43cc5.jpg"
+alt="VPN Firewall Bypass"
+class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+</div>
+<div class="p-6 transform group-hover:-translate-y-2 transition-transform duration-300">
+<h3 class="text-xl font-bold mb-2">VPN Firewall Bypass</h3>
+<p class="text-gray-600 mb-4">Implementation of VPN tunneling techniques to bypass firewall restrictions using SEED Labs, demonstrating network security concepts.</p>
+<a href="#" class="inline-flex items-center text-secondary hover:text-secondary/80 group">
+View Project <i class="ri-arrow-right-line ml-2 group-hover:translate-x-2 transition-transform"></i>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="h-48 overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/57c8360e26f6284a3e26baa7ce079d7a.jpg"
+alt="RSA Encryption App"
+class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+</div>
+<div class="p-6 transform group-hover:-translate-y-2 transition-transform duration-300">
+<h3 class="text-xl font-bold mb-2">RSA Encryption App</h3>
+<p class="text-gray-600 mb-4">A comprehensive RSA encryption application featuring key generation, message encryption/decryption, and digital signatures.</p>
+<a href="#" class="inline-flex items-center text-secondary hover:text-secondary/80 group">
+View Project <i class="ri-arrow-right-line ml-2 group-hover:translate-x-2 transition-transform"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="text-center md:text-left mb-8 md:mb-0">
+<h2 class="text-2xl font-bold mb-2">Let's Connect</h2>
+<p class="text-gray-300">Ready to collaborate on cybersecurity projects?</p>
+</div>
+<div class="flex gap-4">
+<a href="mailto:contact@ajmalfaisal.com" class="px-6 py-3 bg-secondary/10 rounded-button hover:bg-secondary/20 transition-colors">
+Contact Me
+</a>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-gray-200 text-center text-sm text-gray-400">
+© 2025 Ajmal Faisal. All rights reserved.
+</div>
+</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+<script>
+// TryHackMe Chart
+const tryhackmeChart = echarts.init(document.getElementById('tryhackmeChart'));
+const tryhackmeOption = {
+  animation: false,
+  color: ['rgba(87, 181, 231, 1)', 'rgba(141, 211, 199, 1)'],
+  tooltip: {
+    trigger: 'axis',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+    textStyle: {
+      color: '#1f2937'
+    }
+  },
+  legend: {
+    data: ['Rooms Completed', 'Points Earned'],
+    textStyle: {
+      color: '#e5e7eb'
+    }
+  },
+  grid: {
+    top: 60,
+    right: 20,
+    bottom: 30,
+    left: 50
+  },
+  xAxis: {
+    type: 'category',
+    data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+    axisLine: {
+      lineStyle: {
+        color: '#4b5563'
+      }
+    },
+    axisLabel: {
+      color: '#e5e7eb'
+    }
+  },
+  yAxis: [{
+    type: 'value',
+    name: 'Rooms',
+    axisLine: {
+      lineStyle: {
+        color: '#4b5563'
+      }
+    },
+    axisLabel: {
+      color: '#e5e7eb'
+    },
+    splitLine: {
+      lineStyle: {
+        color: '#374151'
+      }
+    }
+  }, {
+    type: 'value',
+    name: 'Points',
+    axisLine: {
+      lineStyle: {
+        color: '#4b5563'
+      }
+    },
+    axisLabel: {
+      color: '#e5e7eb'
+    },
+    splitLine: {
+      show: false
+    }
+  }],
+  series: [{
+    name: 'Rooms Completed',
+    type: 'bar',
+    data: [3, 5, 8, 12, 15, 18],
+    itemStyle: {
+      borderRadius: 6
+    }
+  }, {
+    name: 'Points Earned',
+    type: 'line',
+    yAxisIndex: 1,
+    data: [150, 250, 400, 600, 750, 900],
+    smooth: true,
+    showSymbol: false,
+    areaStyle: {
+      opacity: 0.1
+    }
+  }]
+};
+tryhackmeChart.setOption(tryhackmeOption);
+// GitHub Chart
+const githubChart = echarts.init(document.getElementById('githubChart'));
+const githubOption = {
+  animation: false,
+  color: ['rgba(141, 211, 199, 1)'],
+  tooltip: {
+    trigger: 'axis',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+    textStyle: {
+      color: '#1f2937'
+    }
+  },
+  grid: {
+    top: 60,
+    right: 20,
+    bottom: 30,
+    left: 50
+  },
+  xAxis: {
+    type: 'category',
+    data: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    axisLine: {
+      lineStyle: {
+        color: '#4b5563'
+      }
+    },
+    axisLabel: {
+      color: '#e5e7eb'
+    }
+  },
+  yAxis: {
+    type: 'value',
+    name: 'Contributions',
+    axisLine: {
+      lineStyle: {
+        color: '#4b5563'
+      }
+    },
+    axisLabel: {
+      color: '#e5e7eb'
+    },
+    splitLine: {
+      lineStyle: {
+        color: '#374151'
+      }
+    }
+  },
+  series: [{
+    name: 'Contributions',
+    type: 'bar',
+    data: [4, 8, 12, 6, 9, 15, 7],
+    itemStyle: {
+      borderRadius: 6
+    }
+  }]
+};
+githubChart.setOption(githubOption);
+// Resize charts when window resizes
+window.addEventListener('resize', () => {
+  tryhackmeChart.resize();
+  githubChart.resize();
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+});
+});
+// Theme toggle functionality
+const themeToggle = document.getElementById('theme-toggle');
+const html = document.documentElement;
+// Check for saved theme preference
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+html.classList.add('dark');
+} else {
+html.classList.remove('dark');
+}
+// Theme toggle button click handler
+themeToggle.addEventListener('click', () => {
+html.classList.toggle('dark');
+localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+// Animate cat emoji
+const catEmoji = themeToggle.querySelector('.cat-emoji');
+catEmoji.style.transform = 'translateY(-2rem) rotate(360deg)';
+setTimeout(() => {
+catEmoji.style.transform = 'translateY(-2rem) rotate(0deg)';
+}, 300);
+});
+// Add dark mode classes to all relevant elements
+document.body.classList.add('dark:bg-gray-900', 'dark:text-gray-100');
+document.querySelectorAll('.bg-white').forEach(el => {
+el.classList.add('dark:bg-gray-800');
+});
+document.querySelectorAll('.text-gray-600').forEach(el => {
+el.classList.add('dark:text-gray-300');
+});
+document.querySelectorAll('.text-gray-900').forEach(el => {
+el.classList.add('dark:text-gray-100');
+});
+document.querySelectorAll('.bg-gray-50').forEach(el => {
+el.classList.add('dark:bg-gray-900');
+});
+</script>
+<style>
+.cat-emoji {
+transition: transform 0.3s ease;
+}
+@keyframes bounce {
+0%, 100% { transform: translateY(-2rem); }
+50% { transform: translateY(-2.5rem); }
+}
+#theme-toggle:hover .cat-emoji {
+animation: bounce 1s infinite;
+}
+</style>
+</body>
+</html>
